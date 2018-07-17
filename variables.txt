@@ -1,0 +1,4 @@
+$myint,NUMERIC,100
+$myfloat,REAL,12.14
+$mychar,CHAR,’c’
+$mystr,STRING,100,”Hello world MIS!!!asd yala feh eh”

@@ -1,0 +1,51 @@
+output: wrap.o var.o Thread.o TCPSocket.o TCPServerSocket.o stringvar.o server.o realvar.o parse.o numericvar.o GarbageCollector.o Connection.o charvar.o Threadmanage.o Threadexe.o
+	g++ -std=c++11 wrap.o var.o Thread.o TCPSocket.o TCPServerSocket.o stringvar.o server.o realvar.o parse.o numericvar.o GarbageCollector.o Connection.o charvar.o Threadmanage.o Threadexe.o -lpthread -o output
+
+
+wrap.o: wrap.cpp wrap.h
+	g++ -std=c++11 -c wrap.cpp
+
+var.o: var.cpp var.h
+	g++ -std=c++11 -c var.cpp
+
+Thread.o: Thread.cpp Thread.h
+	g++ -std=c++11 -c Thread.cpp
+
+TCPSocket.o: TCPSocket.cpp TCPSocket.h
+	g++ -std=c++11 -c TCPSocket.cpp
+
+TCPServerSocket.o: TCPServerSocket.cpp TCPServerSocket.h
+	g++ -std=c++11 -c TCPServerSocket.cpp
+
+stringvar.o: stringvar.cpp stringvar.h
+	g++ -std=c++11 -c stringvar.cpp
+
+server.o: server.cpp
+	g++ -std=c++11 -c server.cpp
+
+realvar.o: realvar.cpp realvar.h
+	g++ -std=c++11 -c realvar.cpp
+
+parse.o: parse.cpp parse.h
+	g++ -std=c++11 -c parse.cpp
+
+numericvar.o: numericvar.cpp numericvar.h
+	g++ -std=c++11 -c numericvar.cpp
+
+GarbageCollector.o: GarbageCollector.cpp GarbageCollector.h
+	g++ -std=c++11 -c GarbageCollector.cpp
+
+Connection.o: Connection.cpp Connection.h
+	g++ -std=c++11 -c Connection.cpp
+
+charvar.o: charvar.cpp	charvar.h
+	g++ -std=c++11 -c charvar.cpp
+
+Threadmanage.o: Threadmanage.cpp Treadmanage.h
+	g++ -std=c++11 -c Threadmanage.cpp
+Threadexe.o: Threadexe.cpp Threadexe.h
+	g++ -std=c++11 -c Threadexe.cpp
+
+
+clean:
+	rm*.o output
