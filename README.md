@@ -57,4 +57,3 @@ A computer science student at Nile Unniversity.
 A computer engineering student at Nile University.
 
 -> A PDF file with the complete description of the software containing a table of the full functionalities of the program. 
--> Also this PDF contains the name of the author of the server side code who is DR. Karim Sobh
